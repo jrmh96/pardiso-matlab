@@ -42,6 +42,7 @@ fprintf('The maximum residual for the solution X is %0.3g.\n',max(R(:)));
 % Run pardisosolve again and reuse factorizations
 b2 = linspace(1,n,n);
 [X info] = pardisosolve(A,b2,info,verbose); % phase 33
+fprintf('PARDISO test completed successfully - factorizations can be reused.\n');
 
 % Free the PARDISO data structures.
 pardisofree(info);
