@@ -4,11 +4,11 @@
 Documentation [source](https://pardiso-project.org/manual/manual.pdf) (Section 5).
 
 Replace 
- ['-L' 'C:\Program Files (x86)\IntelSWTools\parallel_studio_xe_2020.1.086\compilers_and_libraries_2020\windows\compiler\lib\intel64'],...
-    '-lifcoremt' 
+ ['-L' fortranpath],...
+    '-l...' 
     
-with local fortran compiler location and version. Likewise, replace ['-L' '.\pardiso-libraries'], '-lpardiso'
-with location and name of pardiso.lib file.
+with local fortran compiler location and version. Likewise, replace ['-L' pardisopath], '-lpardiso'
+with location and name of libpardiso600-WIN-X86-64.lib file. (It helps if you rename it to pardiso.lib beforehand)
 
 ## Expected Behavior
 makepardiso.m should generate mexw64 files and exampleunsym.m should run successfully.
