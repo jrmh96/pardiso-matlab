@@ -10,6 +10,6 @@ Replace
 with local fortran compiler location and version. Likewise, replace ['-L' '.\pardiso-libraries'], '-lpardiso'
 with location and name of pardiso.lib file.
 
-
-
+## Expected Behavior
+makepardiso.m should generate mexw64 files and exampleunsym.m should run successfully.
 
